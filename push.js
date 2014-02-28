@@ -15,12 +15,10 @@ angular.module('phonegap',
     };
   })
 
-  .factory('push', function ($rootScope, phone, phonegapReady) {
+  .factory('push', function ($rootScope, phone, cordovaReady) {
     return {
       registerPush: function (fn) {
-        phonegapReady().then(function () {
-          var
-            pushNotification = window.plugins.pushNotification,
+          var pushNotification = window.plugins.pushNotification,
             successHandler = function (result) {},
             errorHandler = function (error) {},
             tokenHandler = function (result) {
@@ -91,7 +89,6 @@ angular.module('phonegap',
               'ecb': 'app.onNotificationAPN'
             });
           }
-        });
       }
     };
   });
