@@ -1,9 +1,9 @@
 {
   "name": "angular-phonegap-push-notification",
-  "version": "0.0.2",
-  "homepage": "https://github.com/PatrickHeneise/angular-phonegap-push-notification",
+  "version": "0.0.3",
+  "homepage": "https://github.com/jacopocappelli1989/angular-phonegap-push-notification",
   "authors": [
-    "Patrick Heneise <mail@patrickheneise.com>"
+    "Jacopo Cappelli <jacopo@keepup.pro>"
   ],
   "description": "AngularJS module for Android and iOS push notification services",
   "main": "push.js",
